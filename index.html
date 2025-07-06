@@ -2,126 +2,101 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portfólio - Jonnattan Silva</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      color: #333;
-    }
-
-    header {
-      background: #2c3e50;
-      color: white;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-    }
-
-    header p {
-      font-size: 1.2rem;
-    }
-
-    section {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-
-    .card {
-      background: white;
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    .card h2 {
-      margin-top: 0;
-    }
-
-    .card a {
-      color: #2980b9;
-      text-decoration: none;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #2c3e50;
-      color: white;
-      margin-top: 2rem;
-    }
-
-    .skills ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-    }
-
-    .skills li {
-      background: #2980b9;
-      color: white;
-      padding: 0.5rem 1rem;
-      border-radius: 20px;
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 600px) {
-      .skills ul {
-        flex-direction: column;
-      }
-    }
-  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-light text-dark">
 
-  <header>
+  <header class="bg-dark text-white text-center py-5">
     <h1>Jonnattan Silva</h1>
-    <p>Aluno Técnico em Informática para Internet</p>
+    <p class="lead">Aluno Técnico em Informática para Internet</p>
   </header>
 
-  <section class="card">
-    <h2>Sobre mim</h2>
-    <p>Curioso por tecnologia e sempre em busca de novos conhecimentos. Gosto de aprender, explorar soluções inovadoras e evoluir constantemente..</p>
-  </section>
+  <main class="container my-5">
 
-  <section class="card">
-    <h2>Projetos</h2>
-    <ul>
-      <li><strong>Site Solar Energy:</strong> <a href="https://github.com/JonnattanSS/Site-SolarEnergy">Ver projeto</a></li>
-      <li><strong>Sistema de Gerenciamento de Biblioteca :</strong> <a href="https://github.com/JonnattanSS/casos-teste">Ver projeto</a></li>
-      <li><strong>Site de Cadastro de instituicao:</strong> <a href="https://github.com/JonnattanSS/instituicao">Ver projeto</a></li>
-    </ul>
-  </section>
+    <!-- Sobre Mim -->
+    <section class="card mb-4">
+      <div class="card-body">
+        <h2 class="card-title">Sobre mim</h2>
+        <p class="card-text">
+          Curioso por tecnologia e sempre em busca de novos conhecimentos. Gosto de aprender, explorar soluções inovadoras e evoluir constantemente.
+        </p>
+      </div>
+    </section>
 
-  <section class="card skills">
-    <h2>Habilidades</h2>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>PHP</li>
-    </ul>
-  </section>
+    <!-- Projetos -->
+    <section class="mb-4">
+      <h2 class="mb-3">Projetos</h2>
 
-  <section class="card">
-    <h2>Contato</h2>
-    <p>Email: silvajonnattan@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/jonnattan-silva-5b2aab34a/" target="_blank">https://www.linkedin.com/in/jonnattan-silva-5b2aab34a/</a></p>
-    <p>GitHub: <a href="https://github.com/JonnattanSS" target="_blank">https://github.com/JonnattanSS</a></p>
-  </section>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <!-- Projeto 1 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" class="card-img-top" alt="GIF Projeto Solar Energy">
+            <div class="card-body">
+              <h5 class="card-title">Site Solar Energy</h5>
+              <p class="card-text">Projeto de site institucional com foco em energia solar.</p>
+              <a href="https://github.com/JonnattanSS/Site-SolarEnergy" target="_blank" class="btn btn-primary">Ver projeto</a>
+            </div>
+          </div>
+        </div>
 
-  <footer>
-    <p>&copy; 2025 - Jonnattan Silva. Todos os direitos reservados.</p>
+        <!-- Projeto 2 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif" class="card-img-top" alt="GIF Biblioteca">
+            <div class="card-body">
+              <h5 class="card-title">Sistema de Biblioteca</h5>
+              <p class="card-text">Sistema de gerenciamento de biblioteca com funcionalidades CRUD.</p>
+              <a href="https://github.com/JonnattanSS/casos-teste" target="_blank" class="btn btn-primary">Ver projeto</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto 3 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" class="card-img-top" alt="GIF Cadastro Instituição">
+            <div class="card-body">
+              <h5 class="card-title">Cadastro de Instituição</h5>
+              <p class="card-text">Site para cadastro e listagem de instituições.</p>
+              <a href="https://github.com/JonnattanSS/instituicao" target="_blank" class="btn btn-primary">Ver projeto</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section class="card mb-4">
+      <div class="card-body">
+        <h2 class="card-title">Habilidades</h2>
+        <div class="d-flex flex-wrap gap-2 mt-3">
+          <span class="badge bg-primary">HTML</span>
+          <span class="badge bg-primary">CSS</span>
+          <span class="badge bg-primary">JavaScript</span>
+          <span class="badge bg-primary">PHP</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="card mb-4">
+      <div class="card-body">
+        <h2 class="card-title">Contato</h2>
+        <p><strong>Email:</strong> silvajonnattan@gmail.com</p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jonnattan-silva-5b2aab34a/" target="_blank">Perfil no LinkedIn</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/JonnattanSS" target="_blank">Perfil no GitHub</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2025 - Jonnattan Silva. Todos os direitos reservados.</p>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
