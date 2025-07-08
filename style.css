@@ -1,0 +1,79 @@
+body {
+  background: url("Black and White Minimalist Abstract Event Poster.png") no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+}
+
+.bg-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  min-height: 100vh;
+  padding-bottom: 2rem;
+}
+
+header {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+header h1, header p {
+  color: #ffffff;
+  text-shadow: 1px 1px 4px #000;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.92);
+  color: #222;
+  border: none;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+.project-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-body .btn {
+  align-self: center;
+  margin-top: 1rem;
+}
+
+.skills-icons img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.skills-icons img:hover {
+  transform: scale(1.2) rotate(5deg);
+  filter: brightness(1.2);
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+a {
+  color: #0d6efd;
+}
+
+.card a:hover img {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
